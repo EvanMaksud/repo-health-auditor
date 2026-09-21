@@ -1,0 +1,17 @@
+[project]
+name = "repo-health-auditor"
+version = "0.1.0"
+description = "A standard-library CLI that audits repository readiness for public portfolio use."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Evan Maksud" }]
+license = { text = "MIT" }
+keywords = ["github", "portfolio", "audit", "cli", "repository"]
+
+[project.scripts]
+repo-health = "repo_health_auditor.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
